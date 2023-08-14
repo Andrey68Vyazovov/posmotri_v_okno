@@ -102,7 +102,7 @@ ol {
   font-family: inherit;
   font-size: inherit;
   color: rgba(255, 255, 255, 0.7);
-  width: 225px;
+  min-width: 225px;
   height: 27px;
   padding: 0;
   border: none;
@@ -121,7 +121,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -164,7 +164,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 18px;
   height: 18px;
   vertical-align: middle;
@@ -180,11 +180,11 @@ input[type='checkbox']:checked + span {
 
 .search-form__submit-button {
   align-self: flex-end;
-  width: 194px;
+  min-width: 194px;
   height: 34px;
   background-color: transparent;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -221,11 +221,11 @@ input[type='checkbox']:checked + span {
 
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 30px */
+  line-height: 100%;
   text-transform: uppercase;
 }
 
@@ -234,7 +234,7 @@ input[type='checkbox']:checked + span {
   display: block;
   width: 97%;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -285,6 +285,10 @@ input[type='checkbox']:checked + span {
   padding-bottom: 30px;
 }
 
+.content__list-item:last-child {
+  padding-bottom: 0;
+}
+
 .content__video-card-descrition-container {
   width: 100%;
 }
@@ -300,7 +304,7 @@ input[type='checkbox']:checked + span {
   background-color: transparent;
   width: 100%;
   height: 34px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -331,7 +335,7 @@ input[type='checkbox']:checked + span {
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
   padding-top: 3px;
   padding-bottom: 23px;
@@ -339,7 +343,7 @@ input[type='checkbox']:checked + span {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
